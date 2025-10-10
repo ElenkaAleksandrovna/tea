@@ -5,12 +5,13 @@
    <meta charset="UTF-8">
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
    <title>Tea</title>
-   <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;1,300&display=swap"
-      rel="stylesheet">
-   <link rel="preload" href="https://fonts.googleapis.com/css2?family=Cormorant:regular&display=swap" as="style" onload="this.onload=null;this.rel='stylesheet'">
-   <noscript>
-     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cormorant:regular&display=swap">
-   </noscript>
+      <!-- Предзагрузка (ускоряет загрузку и не блокирует отрисовку) -->
+      <link rel="preload" href="https://fonts.googleapis.com/css2?family=Cormorant&family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;1,300&display=swap" as="style" onload="this.onload=null;this.rel='stylesheet'">
+
+      <!-- Резерв на случай отключённого JS -->
+      <noscript>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cormorant&family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;1,300&display=swap">
+      </noscript>
 
    <link rel="stylesheet" href="css/style.css">
 </head>
@@ -379,4 +380,5 @@
 
 
 </html>
+
 
